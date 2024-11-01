@@ -50,6 +50,7 @@ export default class Modal {
   }
 
   setBody(node) {
-    this.elem.querySelector('.modal__body').innerHTML = node.outerHTML;
+    this.elem.querySelector('.modal__body').innerHTML = '';
+    this.elem.querySelector('.modal__body').append(node);
   }
 }
